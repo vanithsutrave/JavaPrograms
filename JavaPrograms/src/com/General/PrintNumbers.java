@@ -6,16 +6,20 @@ package com.General;
 public class PrintNumbers {
 	
 	public static void main(String[] args) {
+		 
+		num(1); 
+		 
+		 }
 		
 	
-		
-		int n = 0;
-		
-		if(n < 11){	
-		n++;
+		public static void num(int n) 
+		{ 
+		  if(n <= 10) {
+			     
+		      System.out.println(n); 
+		      
+		      num(n+1);
+		   }
 		}
-	System.out.println(n);
-	}
-	
-
+	 
 }

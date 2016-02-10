@@ -5,8 +5,12 @@ package com.loops;
 public class CommandLineTest {
 
 	public static void main(String[] args) {
-		String arg1 = args[0];                     //First command line argument value being set to arg1
-		if (arg1.equals("Sam")) {           
+		
+		int i = 0;
+		args[i] = args[0]; 
+		System.out.println("Enter an name(argument) in command line");
+		
+		if(args[0].equals("Sam")) {           
 			System.out.println("My name is Sam");
 		} else {
 			System.out.println("I am someone else.");
